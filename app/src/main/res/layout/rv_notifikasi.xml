@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="12">
+    <TextView
+        android:id="@+id/nama_donatur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Nama Donatur"
+        android:textSize="12dp"
+        android:textColor="#474747"
+        />
+    <TextView
+        android:id="@+id/nama_masjid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Nama Masjid"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="#474747"
+        />
+    <TextView
+        android:id="@+id/jenis_donasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Jenis Donasi"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="#474747"
+        />
+    <TextView
+        android:id="@+id/nominal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Nominal"
+        android:textSize="12dp"
+        android:textColor="#474747"
+        />
+    <TextView
+        android:id="@+id/tanggal_donasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Tanggal Donasi"
+        android:textSize="12dp"
+        android:textColor="#474747"
+        />
+
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

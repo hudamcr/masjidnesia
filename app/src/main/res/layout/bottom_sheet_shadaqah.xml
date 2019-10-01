@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_sheet"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"/>
+
+        <Spinner
+            android:id="@+id/sp_jenis"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="35dp"
+            android:dropDownWidth="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"></Spinner>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/comment_input_layout"
+            android:layout_width="match_parent"
+            app:counterEnabled="true"
+            app:counterTextColor="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/big_image"
+            app:hintTextColor="#282828">
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nama"
+            android:maxLength="250"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/comment_input_layout2"
+            android:layout_width="match_parent"
+            app:counterEnabled="true"
+            app:counterTextColor="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/big_image"
+            app:hintTextColor="#282828">
+            <EditText
+                android:id="@+id/donasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Donasi"
+                android:maxLength="250"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Bayar"
+        android:textColor="#fff" />
+
+</LinearLayout>
+</LinearLayout>
